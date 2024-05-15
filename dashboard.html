@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Materialize - Dual Sidebars (Ultra-wide 21:9 )</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css'>
+	<link href="lib/icon-font-google/material-icons.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="./dashboard.css">	
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+	<nav class="red accent-4">
+		<div class="nav-wrapper">
+			<div class="row">
+				<div class="col s12">
+					<a id="burger-icon-1" href="#" data-target="sidebar-1" class="left sidenav-trigger show-on-medium"><i class="material-icons">menu</i></a>
+					
+					<a class="brand-logo">C.C Mangozal</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+<!-- SIDEBAR 1 - HAS .SIDENAV-FIXED -->
+<ul id="sidebar-1" class="sidenav sidenav-fixed">
+	<li>
+		<div class="user-view">
+			<div class="background">
+				<img src="https://image.slidesharecdn.com/rutadelpoderpopulardigital-240302050736-23825ace/85/RUTA-DEL-PODER-POPULAR-7-T-Digital-pdf-28-320.jpg">
+			</div>
+			<a href="#!user"><img class="circle" src="https://www.buscabiografias.com/img/people/Hugo_Chavez.jpg"></a>
+			<a href="#!name"><span class="white-text name">Administrador</span></a>
+			<a href="#!email"><span class="white-text email">admin@ccmangozal.com</span></a>
+		</div>
+	</li>
+	<li><a id="menu-user">Usuarios</a></li>
+	<li><a id="menu-register">Registro</a></li>
+	<li><a id="menu-acta">Acta</a></li>
+</ul>
+
+<main id="main">
+	<div class="container">
+		<h1 class="center">Registro y Actualizacion</h1>
+		<p class="flow-text">Pagina Web de Registro y Actualizacion del Consejo Comunal El Mangozal.</p>
+		<p>
+			A través de este proyecto, se busca contribuir al fortalecimiento institucional y al desarrollo integral de la comunidad de "El Mangozal de la Puente", fomentando la consolidación de un Consejo Comunal más dinámico, inclusivo y proactivo en su accionar cotidiano en beneficio de todos sus integrantes.
+		</p>
+		<p>
+			Es conveniente destacar la integración de la comunidad en todas las fases del proyecto, desde la planificación hasta la evaluación. Establecer mecanismos de sostenibilidad, se deben establecer mecanismos para garantizar la sostenibilidad del proyecto a largo plazo, como la creación de un modelo de negocio para la página web. También es importante ofrecer una capacitación adecuada a los ciudadanos que utilizaran y administrar la página web. Esto les permitirá aprovechar al máximo sus funcionalidades y garantizar un uso correcto y eficiente de la herramienta. Debe ser diseñada de manera integral, abarcando todos los aspectos clave de la página web, desde el registro correcto de los usuarios para una gestión de su perfil y el manejo de la base de datos de los usuarios.  
+		</p>		
+	</div>
+</main>
+
+<main id="main-user">
+	<div class="container" >
+		<div class="row" id="user-container">
+			
+		</div>
+	</div>
+	<div class="fixed-action-btn">
+		<a class="btn-floating btn-large red modal-trigger" href="#modal1">
+		  <i class="large material-icons">add</i>
+		</a>
+	</div>
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<div class="row">
+				<div class="col s12">						  
+					  <img src="image/logo-magozal.png" width="150" class="circle responsive-img"> <!-- notice the "circle" class -->
+					  
+			  	</div>
+			</div>
+			<div class="row"><span class="card-title" center>Registro de Usuario</span></div>
+			<div class="row">
+				<form class="col s12">
+				  <div class="row">
+					<div class="input-field col s12 l6">
+					  <input id="nombre" type="text" class="validate">
+					  <label for="nombre">Nombre</label>
+					</div>
+					<div class="input-field col l6 s12">
+					  <input id="apellido" type="text" class="validate">
+					  <label for="apellido">Apellido</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field col s12">
+					  <input id="usuario" type="text" class="validate">
+					  <label for="usuario">Usuario</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field col s12">
+					  <input id="password" type="password" class="validate">
+					  <label for="password">Password</label>
+					</div>
+				  </div>			  
+				</form>
+			  </div>
+		</div>
+		<div class="modal-footer">
+		  <a href="#!" id="user-save" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
+		</div>
+	</div>
+</main>
+
+<main id="main-register">
+	<div class="container">
+		<h1 class="center">Registro y Actualizacion</h1>
+		<div class="row" id="register-container">
+			
+		</div>		
+	</div>
+	<div class="fixed-action-btn">
+		<a class="btn-floating btn-large red modal-trigger" href="#modal2">
+		  <i class="large material-icons">add</i>
+		</a>
+	</div>
+	<div id="modal2" class="modal">
+		<div class="modal-content">
+			<div class="row">
+				<div class="col s12">						  
+					  <img src="image/logo-magozal.png" width="150" class="circle responsive-img"> <!-- notice the "circle" class -->
+					  
+			  	</div>
+			</div>
+			<div class="row"><span class="card-title" center>Registro Miembro Consejo comunal</span></div>
+			<div class="row">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s12 l12">
+						  <input id="comite" type="text" class="validate">
+						  <label for="comite">Comite</label>
+						</div>						
+					</div>
+				  <div class="row">
+					<div class="input-field col s12 l6">
+					  <input id="nombre1" type="text" class="validate">
+					  <label for="nombre1">Nombre y Apellido</label>
+					</div>
+					<div class="input-field col l6 s12">
+					  <input id="cedula" type="text" class="validate">
+					  <label for="cedula">Cedula</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field col s12 l6">
+					  <input id="voto" type="text" class="validate">
+					  <label for="voto">Votos</label>
+					</div>					
+				  </div>				  		  
+				</form>
+			  </div>
+		</div>
+		<div class="modal-footer">
+		  <a href="#!" id="register-save" class="modal-close waves-effect waves-green btn-flat">Guardar</a>
+		</div>
+	</div>
+</main>
+
+<main id="main-acta">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12">
+			  <div class="card white">
+				<div class="card-content black-text">
+				  <span class="card-title center">ACTA DE ELECCIÓN DE VOCERAS Y VOCEROS DEL CONSEJO COMUNA</span>
+				  <p>Constitución ( ) Renovación ( )
+					Nombre del Consejo Comunal: _______________________________________________
+					Código SITUR (omitir si es constitución)_______________________________________
+					Nombre de la Comunidad: ___________________________ Estado: ________________
+					Municipio: __________________________ Parroquia: __________________________
+					Telefono: ____________________ Correo: _____________________________________
+					En fecha ____________, del mes de ________________ del año ________, reunidos en
+					Asamblea de Ciudadanos y Ciudadanas como máxima Instancia de deliberación y decisión
+					para el ejercicio del Poder Popular Comunitario, los habitantes de la comunidad
+					________________________, siendo la hora: ________, atendiendo la convocatoria
+					realizada por la Comisión Electoral Permanente a los ciudadanos y ciudadanas mayores de
+					quince (15) años de edad, con el fin de realizar el proceso de escrutinio de los votos
+					obtenidos durante el proceso de elección de los voceros y voceras de las distintas instancias
+					del Consejo Comunal para el periodo ____________, donde de un total de electores
+					registrados en el cuaderno de votación __________ asistieron y votaron ___________ y
+					de conformidad a lo establecido en la Ley Orgánica de los Consejos Comunales en sus
+					artículos 2, 3, 43, y capítulos II y III, se desarrollan los detalles del orden del día:
+					PRIMER PUNTO: Se procedió a llevar a cabo las elecciones de los voceros y voceras del
+					Consejo Comunal, arrojando los siguientes resultados en cada unidad:</p>
+					<span class="card-title center">VOCERAS Y VOCEROS DEL CONSEJO COMUNA</span>
+					<p id="voceros-container"></p>
+					<p>De conformidad con lo dispuesto en el Artículo 17, numeral 1, de la Ley
+						Orgánica de los Consejos Comunales, esta asamblea autoriza, al ciudadano o ciudadana
+						__________________________, titular de la cédula de Identidad ___________, en su
+						carácter de vocero o vocera designado por la Comisión Electoral Permanente, para que
+						solicite el registro del presente documento, ante el Ministerio del Poder Popular para las
+						Comunas y Movimientos Sociales según los mecanismos o parámetros que este disponga
+						para tal fin.
+						Se levanta el acta y de conformidad con lo establecido en los Artículos 36 y 37 de la Ley
+						Orgánica de los Consejos Comunales, los miembros de la Comisión Electoral Permanente
+						firman en señal de haber cumplido de manera transparente y auditable con el proceso de
+						elección de los voceros y voceras de las distintas instancias del Consejo Comunal.</p>
+				</div>				
+			  </div>
+			</div>
+		</div>			
+	</div>
+</main>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js'></script>
+
+<script src='https://codepen.io/j_holtslander/pen/pLNzQb.js'></script>
+
+<script  src="./dashboard.js"></script>
+
+</body>
+</html>
